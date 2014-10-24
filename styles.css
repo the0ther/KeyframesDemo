@@ -1,20 +1,35 @@
-#stage {
-	width: 400px;
-	height: 400px;
-	margin: 20px auto;
-	padding-top: 20px;
-	background: #ccc;
+body {
+	background: #aaa;
+	margin: 0;
 }
 
 #square {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	background: #11b;
-	margin: 20px auto;
+	position: fixed;
+	left: 0;
+	-webkit-animation-name: square-dance;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-easing: ease-out;
 }
 
-#square:hover {
-	background-color: #1b1;
-	cursor: pointer;
-	transition: background-color 2s ease-out;
+@-webkit-keyframes square-dance {
+    0% { left: 0px; }
+    25% { 
+    	left: calc(100% - 100px); 
+    	top: 0px; 
+    }
+    50% { 
+    	left: calc(100% - 100px); 
+    	top: calc(100% - 100px); 
+    }
+    75% { 
+    	left: 0px; 
+    	top: calc(100% - 100px); 
+    }
+    100% { 
+    	left: 0px; 
+    	top: 0px; 
+    }
 }
