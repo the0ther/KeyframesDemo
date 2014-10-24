@@ -1,0 +1,20 @@
+#stage {
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
+	padding-top: 20px;
+	background: #ccc;
+}
+
+#square {
+	width: 200px;
+	height: 200px;
+	background: #11b;
+	margin: 20px auto;
+}
+
+#square:hover {
+	background-color: #1b1;
+	cursor: pointer;
+	transition: background-color 2s ease-out;
+}
